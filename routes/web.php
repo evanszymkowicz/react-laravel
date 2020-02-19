@@ -10,26 +10,47 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Static Pages
+Route::get('/', 'StaticPagesController@home');
+Route::get('/menu', 'StaticPagesController@menu');
+Route::get('/menu/{slug}', 'StaticPagesController@singleMenu');
+Route::get('/about', 'StaticPagesController@about');
+Route::get('/reservations', 'StaticPagesController@reservations');
+Route::get('/contact', 'StaticPagesController@contact');
+Route::get('/offers', 'StaticPagesController@offers');
 
-Route::get('/', function () {
-    return view('home');
+// Admin Dashboard
+Route::get('/admin', 'admin\AdminController@dashboard');
+
+// Admin Food Categories
+Route::get('/admin/food-categories', 'admin\FoodCategoriesController@index');
+Route::get('/admin/food-categories/create', 'admin\FoodCategoriesController@create');
+Route::get('/admin/food-categories/{id}/edit', 'admin\FoodCategoriesController@edit');
+
+// Admin Food Items
+Route::get('/admin/food-items', 'admin\FoodItemsController@index');
+Route::get('/admin/food-items/create', 'admin\FoodItemsController@create');
+Route::get('/admin/food-items/{id}/edit', 'admin\FoodItemsController@edit');
+
+// Admin Users
+Route::get('/admin/users', 'admin\UsersController@index');
+Route::get('/admin/users/create', 'admin\UsersController@create');
+Route::get('/admin/users/{id}/edit', 'admin\UsersController@edit');
+
+// Admin Customers
+Route::get('/admin/offers-members', 'admin\CustomersController@allOffersMembers');
+Route::get('/admin/reservations', 'admin\CustomersController@allReservations');
+
+// Admin Authentication
+Route::get('/admin/register', function () {
+    return view('admin/register');
+});
+Route::get('/admin/login', function () {
+    return view('admin/login');
 });
 
-Route::get('/menu', function () {
-    return view('menu/index');
-});
-Route::get('/about', function () {
-    return view('pages/about');
-});
-Route::get('/waitlist', function () {
-    return view('pages/waitlist');
-});
-Route::get('/contact', function () {
-    return view('pages/contact');
-});
-Route::get('/giftcards', function () {
-    return view('pages/giftcards');
-});
-Route::get('/offers', function () {
-    return view('pages/offers');
-});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
