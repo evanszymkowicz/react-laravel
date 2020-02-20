@@ -1,9 +1,5 @@
 @extends('layouts.landing')
 
-
-
-
-
 @section('content')
 <section id="information">
     <div class="restaurant-image">
