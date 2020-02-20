@@ -35,6 +35,7 @@ Route::get('/admin/food-items/{id}/edit', 'admin\FoodItemsController@edit');
 // Admin Users
 Route::get('/admin/users', 'admin\UsersController@index');
 Route::get('/admin/users/create', 'admin\UsersController@create');
+Route::post('/admin/users', 'admin\UsersController@store');
 Route::get('/admin/users/{id}/edit', 'admin\UsersController@edit');
 
 // Admin Customers
@@ -50,10 +51,6 @@ Route::get('/admin/login', function () {
 });
 
 
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
