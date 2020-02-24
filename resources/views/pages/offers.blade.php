@@ -6,7 +6,7 @@
     <div class="content-box">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <h1>Sign Up To Notifications For Deals</h1>
+                <h1>Sign Up to Receive Updates</h1>
                 <form>
                     <div class="row">
                         <div class="col-md-6">
@@ -31,7 +31,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="phoneinput">Phone #</label>
+                                <label for="phoneinput">Phone</label>
                                 <input name="phone" type="text" class="form-control" id="phoneinput" placeholder="718-298-5768">
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <p>
-                                    In signing up I acknowledge that I am 18 years of age or older, want to receive email offers from Billys Burgers and, if I select to join Dine Rewards, agree to the terms and conditions of the program.
+                                    In signing up I acknowledge that I am 18 years of age or older, want to receive email offers from District Burgerand, if I select to join Dine Rewards, agree to the terms and conditions of the program.
                                 </p>
                             </div>
                         </div>

@@ -6,7 +6,7 @@
         <img src="img/top-down.jpg">
     </div>
     <div class="info">
-        <h2>We Started From The Bottom In 1987</h2>
+        <h2>Since 1987</h2>
         <div class="paragraphs">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid dolore, error minus ad officia
                 fugit iusto repellat, explicabo reiciendis inventore mollitia non, libero perspiciatis dicta eius consequatur
@@ -26,14 +26,14 @@
                 similique!</p>
         </div>
         <a href="#" class="about-link">
-            <span>Learn more about restaurants</span>
+            <span>Learn more about our restaurant</span>
             <div class="circle-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
         </a>
     </div>
 </section>
 <section id="food-preview">
-    <h2>We have everything you need to kill your hunger</h2>
-    <div class="button-rounded">View Our Menu</div>
+    <h2>Hungry? Not for long.</h2>
+    <div class="button-rounded">Our Menu</div>
     <div class="container">
         <div class="left-btn">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>

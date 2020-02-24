@@ -4,7 +4,7 @@
 <div id="menu-page">
 
     <section id="food-preview">
-        <h2>We have everything you need to kill your hunger</h2>
+        <h2>Hungry? Not for long.</h2>
 
         <div class="container">
             <div class="left-btn">

@@ -6,7 +6,7 @@
     <div class="content-box">
         <div class="row">
             <div class="col-md-6">
-                <h1>Get On The List</h1>
+                <h1>Join The List</h1>
                 <form>
                     <div class="form-group">
                         <label for="firstnameinput">First Name</label>
@@ -21,11 +21,11 @@
                         <input type="email" class="form-control" name="email" id="emailinput" placeholder="name@example.com">
                     </div>
                     <div class="form-group">
-                        <label for="phoneinput">Phone #</label>
+                        <label for="phoneinput">Phone</label>
                         <input name="phone" type="text" class="form-control" id="phoneinput" placeholder="718-298-5768">
                     </div>
                     <div class="form-group">
-                        <label for="guestsinput">How Many Guest</label>
+                        <label for="guestsinput">Guests</label>
                         <select name="guests" class="form-control" id="guestsinput">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -35,7 +35,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="timeinput">What Time?</label>
+                        <label for="timeinput">Arrival</label>
                         <select name="time" class="form-control" id="timeinput">
                             <option value="6">6:00 PM</option>
                             <option value="7">7:00 PM</option>

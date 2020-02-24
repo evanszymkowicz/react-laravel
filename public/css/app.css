@@ -469,6 +469,7 @@ body {
 }
 
 #app-layout .side-menu .logo img {
+  max-height: 100px;
   max-width: 100px;
 }
 
