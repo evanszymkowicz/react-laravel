@@ -9,28 +9,26 @@ use App\FoodCategory;
 
 class FoodItemsController extends Controller
 {
+
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-    public function index()
-    {
+    public function index(){
         $items = FoodItem::paginate(10);
 
         return view('admin/food-items/all', [
             'items' => $items
         ]);
     }
-    public function create()
-    {
+    public function create(){
         $categories = FoodCategory::All();
         return view('admin/food-items/create', [
             'categories' => $categories
         ]);
     }
-    public function store()
-    {
+    public function store(){
         // return request()->all();
         request()->validate([
             'title' => ['required', 'string', 'max:255'],
@@ -49,8 +47,7 @@ class FoodItemsController extends Controller
 
         return redirect('/admin/food-items');
     }
-    public function edit($id)
-    {
+    public function edit($id){
         $item = FoodItem::find($id);
         $categories = FoodCategory::All();
 
@@ -59,8 +56,7 @@ class FoodItemsController extends Controller
             'categories' => $categories
         ]);
     }
-    public function update($id)
-    {
+    public function update($id){
         request()->validate([
             'title' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
@@ -77,9 +73,9 @@ class FoodItemsController extends Controller
         $item->save();
 
         return redirect('/admin/food-items');
+
     }
-    public function delete($id)
-    {
+    public function delete($id){
         $item = FoodItem::find($id);
         $item->delete();
         return redirect('/admin/food-items');

@@ -13,19 +13,19 @@
     <link rel="stylesheet" href="../assets/libs/css/style.css">
     <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
     <style>
-        html,
-        body {
-            height: 100%;
-        }
+    html,
+    body {
+        height: 100%;
+    }
 
-        body {
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-align: center;
-            align-items: center;
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
+    body {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     </style>
 </head>
 
@@ -43,18 +43,18 @@
                         <input id="email" type="email" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="off" autofocus placeholder="email">
 
                         @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
                         @enderror
                     </div>
                     <div class="form-group">
                         <input id="password" type="password" class="form-control form-control-lg @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                         @error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
                         @enderror
                     </div>
                     <div class="form-group">
@@ -73,8 +73,8 @@
                     <a href="#" class="footer-link">Create An Account</a></div>
                 <div class="card-footer-item card-footer-item-bordered">
                     <a class="footer-link" href="{{ route('password.request') }}">
-                        Forgot Password
-                    </a>
+                            Forgot Password
+                        </a>
                     @if (Route::has('password.request'))
 
                     @endif
