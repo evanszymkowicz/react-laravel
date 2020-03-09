@@ -1,5 +1,12 @@
 @extends('layouts.landing')
 
+@section('title')
+{{$settings["general"]->site_title}} Washington Burger
+@endsection
+
+
+
+
 @section('content')
 <section id="information">
     <div class="restaurant-image">
@@ -26,14 +33,14 @@
                 similique!</p>
         </div>
         <a href="#" class="about-link">
-            <span>Learn more about our restaurant</span>
+            <span>Learn more</span>
             <div class="circle-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
         </a>
     </div>
 </section>
 <section id="food-preview">
     <h2>Hungry? Not for long.</h2>
-    <div class="button-rounded">Our Menu</div>
+    <div class="button-rounded">View Our Menu</div>
     <div class="container">
         <div class="left-btn">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
