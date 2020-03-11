@@ -31,7 +31,7 @@ class FoodItemSeeder extends Seeder
             'created_at' => Carbon::now()
         ]);
         DB::table('food_items')->insert([
-            'title' => 'Billys Burger',
+            'title' => 'Main burger',
             'description' => 'Charbroiled Black Angus Beef Patty, Two Slices of American Cheese, Two Slices, Mayonnaise and Ketchup Wrapped in Fresh Iceberg Whole-Leaf Lettuce',
             'image_url' => '/img/Download-Salad-Transparent-PNG.png',
             'price' => 9.99,

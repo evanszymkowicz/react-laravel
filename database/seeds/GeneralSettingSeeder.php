@@ -13,7 +13,7 @@ class GeneralSettingSeeder extends Seeder
     public function run()
     {
         DB::table('general_settings')->insert([
-            'site_title' => 'Billys Burgers',
+            'site_title' => 'Main burgers',
             'logo_image_url' => '/img/clipart-restaurant-restaurant-logo-5.png',
             'address_1' => '730 NW 36th St',
             'address_2' => '',

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFoodItemsTable extends Migration
+class CreateSeoSettingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreateFoodItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('food-items', function (Blueprint $table) {
+        Schema::create('seo_settings', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('description');
+            $table->text('keywords');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateFoodItemsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('food-items');
+        Schema::dropIfExists('seo_settings');
     }
 }
