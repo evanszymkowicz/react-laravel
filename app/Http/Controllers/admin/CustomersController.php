@@ -7,10 +7,17 @@ use Illuminate\Http\Request;
 
 class CustomersController extends Controller
 {
-    public function allOffersMembers(){
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    public function allOffersMembers()
+    {
         return view('admin/customers/all-offers-members');
     }
-    public function allReservations(){
+    public function allReservations()
+    {
         return view('admin/customers/all-reservations');
     }
 }
