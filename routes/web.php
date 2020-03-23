@@ -28,6 +28,7 @@ Route::get('/offers/thank-you', 'StaticPagesController@thankYou');
 
 // Admin Dashboard
 Route::get('/admin', 'admin\AdminController@dashboard');
+Route::get('/admin/estimated-revenue-daily', 'admin\AdminController@dailyRevenueLast30');
 
 // Admin Food Categories
 Route::get('/admin/food-categories', 'admin\FoodCategoriesController@index')->middleware('role:Admin');
@@ -86,7 +87,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-View::composer(['home', 'pages/about', 'pages/contact', 'pages/offers', 'pages/reservations', 'thank-you', 'menu.index', 'menu.single-menu'], function ($view) {
+View::composer(['home', 'pages/about', 'pages/contact', 'pages/offers', 'pages/reservations', 'thank-you', 'menu.all-categories', 'menu.single-menu'], function ($view) {
     $generalSettings = GeneralSetting::find(1);
     $socialSettings = SocialSetting::find(1);
     $seoSettings = SeoSetting::find(1);
